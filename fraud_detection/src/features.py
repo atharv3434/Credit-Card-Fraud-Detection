@@ -1,4 +1,5 @@
-"""Behavioural features with Spark window functions.
+"""
+Behavioural features with Spark window functions.
 
 LEAKAGE RULES
   * Every history-based feature for a transaction uses only that user's EARLIER transactions
