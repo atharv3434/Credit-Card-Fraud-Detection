@@ -1,9 +1,11 @@
-"""Business-cost evaluation (numpy/pandas, unit-tested).
+"""
+Business-cost evaluation (numpy/pandas, unit-tested).
 
 Economics: flagging a transaction costs `review_cost` (an analyst looks at it). If it was fraud we
 prevent the loss (its amount); if not we just wasted the review cost. Doing nothing saves $0.
 Simplification: each transaction is judged independently (blocking one in a burst would also
 prevent the later ones, which would make real-world savings higher).
+
 """
 import numpy as np
 
