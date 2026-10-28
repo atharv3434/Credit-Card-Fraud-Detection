@@ -1,4 +1,5 @@
-"""Simulate 90 days of card transactions for 4,000 users with three realistic fraud patterns.
+"""
+Simulate 90 days of card transactions for 4,000 users with three realistic fraud patterns.
 
   card_testing      bursts of tiny online purchases at new devices, sometimes ending in a large cash-out
   account_takeover  new device, foreign IP, spending 3-8x the user's norm on electronics/gift cards/travel
@@ -8,6 +9,7 @@
 Legitimate noise is deliberate so the problem is not trivially separable: ~3% of legitimate
 transactions are abroad (travel), ~1% are unusually large purchases.
 fraud_type is saved for error analysis ONLY and is never used as a feature.
+
 """
 import sys
 from datetime import timedelta
